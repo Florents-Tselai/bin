@@ -9,4 +9,4 @@ curl -X POST -L \
     -H "Authorization: Bearer `echo $GDRIVE_API_TOKEN`" \
     -F "metadata={name : '$file'};type=application/json;charset=UTF-8" \
     -F "file=@$file;type=$mime_type" \
-    "https://www.googleapis.com/upload/drive/v3/files?parents=["1JbABCpNNY3OeckDQkFRQcoruddhZquVo"]&uploadType=multipart"
+    "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart"
