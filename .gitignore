@@ -1,0 +1,5 @@
+.idea/
+
+#binaries
+makefile2graph
+chromedriver

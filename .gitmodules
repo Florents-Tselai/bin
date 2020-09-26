@@ -1,0 +1,3 @@
+[submodule "make2graph-src"]
+	path = make2graph-src
+	url = git@github.com:lindenb/makefile2graph.git
