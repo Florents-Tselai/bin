@@ -1,4 +1,3 @@
 #!/bin/bash
 
 ls | xargs -n1 -P1 -i bash -c 'cd {}; git fetch --all'
-
