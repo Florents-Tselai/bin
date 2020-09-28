@@ -16,6 +16,6 @@ To use them yourself:
 
 ```shell script
 cd $HOME
-git clone git@github.com:Florents-Tselai/bin.git
+git clone git@github.com:Florents-Tselai/scripts.git bin/
 echo "export PATH=$PATH:$HOME/bin" >> $HOME/.bashrc
 ```
