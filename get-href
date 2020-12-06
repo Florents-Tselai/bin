@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tr '[[:upper:]]' '[[:lower:]]' | sed -n 's/.*href="\([^"]*\).*/\1/p'
+
