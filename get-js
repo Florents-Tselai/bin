@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -sL -u $SPLASH_USER:$SPLASH_PASSWORD "$SPLASH_HOST/render.html?url=$1&timeout=10&wait=0.5"
