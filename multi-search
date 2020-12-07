@@ -18,6 +18,7 @@ for url in \
 "https://foreignpolicy.com/?s=$query" \
 "https://www.foreignaffairs.com/search/$query" \
 "https://www.prospectmagazine.co.uk/search?q=$query" \
+"https://hn.algolia.com/?query=$query" \
 ;do
   open $url
 done
