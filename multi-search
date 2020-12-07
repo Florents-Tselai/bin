@@ -1,0 +1,20 @@
+#!/bin/sh
+
+query=$(sed 's/ /+/g' <<<"$1")
+
+
+
+for url in \
+"https://www.economist.com/search?q=$query" \
+"https://www.ft.com/search?q=$query" \
+"https://www.nytimes.com/search?query=$query" \
+"https://www.wsj.com/search?query=$query" \
+"https://www.washingtonpost.com/newssearch/?query=$query" \
+"https://www.theatlantic.com/search/?q=$query" \
+"https://www.newyorker.com/search/q/$query" \
+"https://foreignpolicy.com/?s=$query" \
+"https://www.foreignaffairs.com/search/$query" \
+"https://www.prospectmagazine.co.uk/search?q=$query" \
+;do
+  open $url
+done
