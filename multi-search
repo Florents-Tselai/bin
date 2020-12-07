@@ -1,10 +1,13 @@
 #!/bin/sh
 
+# Need proper urlencode here.
+# For now just replace spaces with +
 query=$(sed 's/ /+/g' <<<"$1")
 
 
 
 for url in \
+"https://mail.google.com/mail/u/0/#search/$query'" \
 "https://www.economist.com/search?q=$query" \
 "https://www.ft.com/search?q=$query" \
 "https://www.nytimes.com/search?query=$query" \
