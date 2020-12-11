@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+for ((i = 2; i <= $#; i++ )); do
+    add-event "$1" "${!i}"
+done
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+when=${3:-$(date +"%Y-%m-%d %R")}
+duration=${4:-60}
+
+gcalcli add --calendar "$1" --title "$2" --when "$when" --duration $duration --noprompt
